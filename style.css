@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: monospace;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 4rem;
+    margin-top: 0.5rem;
+    text-align: center;
+    color: black;
+}
+
+h2 {
+    font-size: 0.8rem;
+    margin-top: 0.8rem;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.397);
+}
+
+.question {
+    margin-top: 1rem;
+}
+
+#ball {
+    position: absolute;
+    margin: 2rem auto 0;
+    border-radius: 50%;
+    border: none;
+    opacity: 0;
+    width: 20rem;
+    height: 20rem;
+    z-index: 11;
+    outline: none;
+    cursor: pointer;
+}
+
+.black-part {
+    position: relative;
+    margin: 2rem auto 0;
+    background-color: black;
+    border-radius: 50%;
+    width: 20rem;
+    height: 20rem;
+}
+
+#white-part {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+}
+
+#eight {
+    color: rgb(0, 0, 0);
+    font-size: 8.5rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+#answer {
+    color: rgb(65, 179, 255);
+    font-size: 1rem;
+    text-align: center;
+    width: 60%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.answers {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(36, 36, 36);
+    border-radius: 50%;
+    width: 10.1rem;
+    height: 10.1rem;
+    opacity: 0;
+}
+
+form {
+    margin: 0.5rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.question {
+    display: flex;
+    flex-direction: column;
+}
+
+#askSomething {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    width: 100%;
+    margin: 1rem auto 0;
+    outline: none;
+}
+
+#res {
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    background-color: rgb(0, 0, 0);
+    color: rgb(65, 179, 255);
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    width: 50%;
+    align-self: center;
+    outline: none;
+}
